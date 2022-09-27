@@ -1,0 +1,16 @@
+{
+  "name": "@monorepos_tech_task/root",
+  "private": true,
+  "devDependencies": {
+    "craco": "0.0.3",
+    "lerna": "^5.1.4"
+  },
+  "scripts": {
+    "start": "lerna exec --scope @monorepos_tech_task/webapp -- yarn start"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/**"
+    ]
+  }
+}
